@@ -93,25 +93,15 @@ li {
 
     h1,
     p {
+        max-width: fit-content;
         text-align: left;
-        padding: 3rem;
-    }
-
-    ul {
-        margin: 0;
-        padding: 0;
-        overflow: hidden;
-    }
-
-    li {
-        float: left
     }
 
     .container {
         display: grid;
-        max-height: 30rem;
+        max-height: 25rem;
         grid-template-columns: repeat(5, 1fr);
-        grid-template-rows: 6rem 6rem 6rem 6rem;
+        grid-template-rows: repeat(4, 5rem);
         grid-template-areas: 
         "head head head img img"
         "par par par img img"
